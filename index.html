@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan M - Portfolio</title>
+
+    <style>
+        /* CSS */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+        :root {
+
+            --backgroundColor: white;
+            --textColor: #222;
+
+            --fancyFont: 'Playfair Display', serif;
+        }
+
+        .dark {
+            --backgroundColor: #222;
+            --textColor: white;
+        }
+
+        body {
+            background-color: var(--backgroundColor);
+            color: var(--textColor);
+        }
+
+        .button {
+            background-color: var(--textColor);
+            padding: 1rem;
+            color: var(--backgroundColor);
+            text-decoration: none;
+            font-size: 16px;
+            font-family: var(--fancyFont);
+            border: 1px solid white;
+            cursor: pointer;
+            filter: blur(1px);
+            transition: filter 0.3s linear;
+        }
+
+        .button:hover {
+            filter: blur(0px);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: var(--fancyFont);
+        }
+    </style>
+</head>
+
+<body class="">
+    <header id="top">
+        <h1>Dan M</h1>
+        <nav aria-label="primary">
+            <ul>
+                <li><a href="#homeSection">Home</a></li>
+                <li><a href="#projectsSection">About</a></li>
+                <li><a href="#contactSection">Contact</a></li>
+                <li><a href="#top">Top</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="homeSection">
+            <h2>I'm a Developer, don't you know?!</h2>
+            <article>
+                <header>
+                    <h3>Hey there, cyber voyagers and pixel pioneers!</h3>
+                </header>
+                <p> I'm Dan Monaghan, the brooding coder who's been
+                    harnessing the chaotic forces of the interwebs for over a decade.
+                    <br>
+                    Picture this: while most people were busy sharing cat memes, I was conjuring digital realms that
+                    would make The Matrix blush. My code is so edgy, it wears leather jackets just to browse the web.
+                    <br>
+                    So, buckle up as we navigate through my twisted mind and the websites I've crafted!
+                </p>
+                <footer>
+                    <button class="button cta">Learn More</button>
+                    <a href="#contactSection" class="button cta secondary">Contact Me</a>
+                </footer>
+            </article>
+        </section>
+        <section id="projectSection" aria-labelledby="projectsHeader">
+            <h2 id="projectsHeader">Projects</h2>
+            <article aria-label="project">
+                <header>
+                    <h3>Article Title</h3>
+                </header>
+                <p>Fugiat molestias dolor odit, autem sunt distinctio quae, repellendus quia tenetur dolore consequuntur
+                    perspiciatis praesentium fugit? Inventore aliquid nobis voluptates laborum! Dolorem ipsam, sapiente
+                    quidem obcaecati voluptatum esse odit numquam.</p>
+                <footer>
+                    <button class="button cta">Buy Now</button>
+                </footer>
+            </article>
+        </section>
+        <section id="contactSection">
+            <h2>Contact</h2>
+            <article>
+                <header>
+                    <h3>Article Title</h3>
+                </header>
+                <p>Nesciunt est eum omnis magnam sapiente, impedit molestias cum vel animi commodi alias fugit. Qui, sed
+                    nihil itaque odio minus est, culpa aut totam voluptate, nulla provident corrupti eum vero?</p>
+                <footer>
+                    <button class="button cta">Buy Now</button>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section>
+            <h2>Navigation</h2>
+            <nav aria-label="secondary">
+                <ul>
+                    <li><a href="#homeSection">Home</a></li>
+                    <li><a href="#projectsSection">About</a></li>
+                    <li><a href="#contactSection">Contact</a></li>
+                    <li><a href="#top">Top</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+
+
+
+</body>
+
+</html>
